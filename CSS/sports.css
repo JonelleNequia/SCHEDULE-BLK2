@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right bottom, #8b13d1, #52979c);
+    overflow: hidden;
+}
+
+.top {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.b_arrow {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 20px;
+    top: 15px;
+
+}
+
+.b_arrow img {
+    width: 36px;
+    height: 36px;
+}
+
+.Course_name {
+    width: 60%;
+    color: #ebebeb;
+    text-align: center;
+    font-weight: 600;
+}
+
+.logo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    position: absolute;
+}
+
+.logo img {
+    width: 300px;
+    height: 300px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #00ffc3;
+    border: 1px solid#00daa7;
+    box-shadow: 0 0 20px #00ffc3;
+}
+
+.m_container {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.table_container {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    backdrop-filter: blur(2px);
+    background-color: #0049384f;
+}
+
+th {
+    backdrop-filter: blur(2px);
+    background-color: #007e604f;
+    box-shadow: 0 0 10px inset #1dfdc9;
+}
+
+table ,td, th {
+    border: 2px solid #1dfdc9;
+    border-collapse: collapse;
+    color: #ebebeb;
+}
+
+table {
+    width: 90%;
+}
+
+.calendar {
+    width: 100%;
+    height: 500px;
+    color: #ebebeb;
+}
+
+.calendar-d {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    background-color: #0049384f;
+    border: 1px solid #1dfdc9;
+}
+
+.calendar ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.weeks {
+    font-weight: 600;
+}
+
+.calendar .days li{
+    margin-top: 20px;
+}
+
+.calendar ul li {
+    width: calc(100% / 7);
+}
+
+.current_month {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #1dfdc9;
+    box-shadow: 0 0 10px inset #16c6cf;
+    background-color: #0f959c52;
+    backdrop-filter: blur(2px);
+    color: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.current_month p {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.icon {
+    width: 150px;
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev_icon {
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    background-color: #00866765;
+    border: 1px solid #00ffc3;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px inset #1dfdc9;
+    display: flex;
+    align-items: center;
+}
+
+.prev_icon img {
+    margin-left: 9px;
+}
+
+.prev_icon:active {
+    background-color: #05ffc562;
+    border: none;
+}
+
+.next_icon {
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    background-color: #00866765;
+    border: 1px solid #00ffc3;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px inset #1dfdc9;
+    display: flex;
+    align-items: center;
+}
+
+.next_icon img {
+    margin-left: 12px;
+    transform: rotate(180deg);
+}
+
+.next_icon:active {
+    background-color: #05ffc562;
+    border: none;
+}
+
+.calendar .days li.highlight {
+    color: #15ff00;
+}
+
+.Sun {
+    color: #ff8989;
+}

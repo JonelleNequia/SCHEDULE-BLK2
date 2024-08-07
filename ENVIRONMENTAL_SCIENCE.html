@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHEDBLK2</title>
+    <link rel="stylesheet" href="CSS/ES.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/20240710_211820.png" alt="">
+    </div>
+    <div class="top">
+        <a href="main.html">
+            <div class="b_arrow" onclick="b_arrow()">
+                <img src="assets/b_arrow.svg" alt="">
+            </div>
+        </a>
+        <div class="Course_name">ENVIRONMENTAL SCIENCE</div>
+    </div>
+    <div class="line"></div>
+    <div class="m_container">
+        <div class="table_container">
+            <table>
+                <tr>
+                    <th>DATE</th>
+                    <th>TIME</th>
+                    <th>ROOM</th>
+                </tr>
+                <tr>
+                    <td>THURSDAY</td>
+                    <td>
+                        2:00 PM 
+                        <br>
+                        <br> to
+                        <br>
+                        <br> 
+                        3:00 PM
+                    </td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>FRIDAY</td>
+                    <td>
+                        2:00 PM
+                        <br> 
+                        <br> to
+                        <br>
+                        <br> 
+                        3:00 PM
+                    </td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>SATURDAY</td>
+                    <td>
+                        2:00 PM
+                        <br> 
+                        <br> to
+                        <br>
+                        <br> 
+                        3:00 PM
+                    </td>
+                    <td>208</td>
+                </tr>
+            </table>
+        </div>
+        <div class="current_month" id="current_month">
+                <p class="current_date" id="current_date"></p>
+                <div class="icon">
+                    <div class="prev_icon" id="prev_icon">
+                        <img src="assets/prev_a.svg" alt="">
+                    </div>
+                    <div class="next_icon" id="next_icon">
+                        <img src="assets/prev_a.svg" alt="">
+                    </div>
+                </div>
+        </div>
+        <div class="calendar">
+            <div class="calendar-d">
+                <ul class="weeks">
+                    <li class="Sun">Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="days" id="days"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/ES.js"></script>
+</body>
+</html>
