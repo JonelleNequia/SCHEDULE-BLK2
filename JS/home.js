@@ -139,6 +139,15 @@ function updateState() {
         Dcon.innerHTML = '<img src="assets/Default.svg">By schedule';
         time.style.display = 'none';
         c_name.style.height = '1150px';
+        if (today === 4) {
+            setInterval(ThursdayCourseTimer, 1000);
+        } else if (today === 5) {
+            setInterval(FridayCourseTimer, 1000);
+        } else if (today === 6) {
+            setInterval(SaturdayCourseTimer, 1000);
+        } else {
+            time.style.display = 'none';
+        }
         renderCalendar();
     }
 }
