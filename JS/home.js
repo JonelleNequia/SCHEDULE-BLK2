@@ -139,6 +139,7 @@ function updateState() {
         Dcon.innerHTML = '<img src="assets/Default.svg">By schedule';
         time.style.display = 'none';
         c_name.style.height = '1150px';
+        renderCalendar();
     }
 }
 
